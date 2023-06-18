@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Short Lived",
+    "version": "0.0.0",
+
+    "description": "Automatically redirects YouTube shorts to the normal video UI",
+
+    "icons": {
+        "48": "icons/shortlived_48.png",
+        "96": "icons/shortlived_96.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["shortlived.js"]
+        }
+    ]
+}
